@@ -64,14 +64,14 @@ sh bin/train.sh
 │- models
 │  │- base_cnn : base CNN models
 │  │  │- model_base : appian's base model
-│  │  │- ricky_se_resnext_410 : chenge img_size of backbone to 410 
-│  │  │- ricky_se_resnext101_mixup : chenge backbone of model_base to se_resnext101 and use mixup
+│  │  │- ricky_se_resnext_410 : change img_size of backbone to 410 
+│  │  │- ricky_se_resnext101_mixup : change backbone of model_base to se_resnext101 and use mixup
 │  │  │- ricky_senet154_customlabels : custom labels model
 │  │  │- shimacos_models : using adjacent image / label_smoothing / without any prediction 
-│  │  │- sugawara_efficientnetb3 : chenge backbone of model_base to efficientnetb3
-│  │  │- 2kyym_inception_resnet_v2 : chenge backbone of model_base to InceptionResnetV2
-│  │  │- 2kyym_inceptionv4 : chenge backbone of model_base to InceptionV4
-│  │  │- 2kyym_xception : chenge backbone of model_base to Xception
+│  │  │- sugawara_efficientnetb3 : change backbone of model_base to efficientnetb3
+│  │  │- 2kyym_inception_resnet_v2 : change backbone of model_base to InceptionResnetV2
+│  │  │- 2kyym_inceptionv4 : change backbone of model_base to InceptionV4
+│  │  │- 2kyym_xception : change backbone of model_base to Xception
 │  │
 │  │- first_stacking : first level stacking models
 │  │  │- cnn_stacking_1.py (ricky)
