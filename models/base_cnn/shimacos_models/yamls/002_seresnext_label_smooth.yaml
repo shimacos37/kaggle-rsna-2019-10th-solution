@@ -1,0 +1,39 @@
+
+base:
+  gpu_id: ['0', '1']
+  loss_name: 'weighted_binary_cross_entropy'
+  scheduler_name: 'warmup_scheduler'
+  opt_name: 'adam'
+data:
+  dataset_name: 'smooth_dataset'
+  image_size: 512
+  crop_width: 512
+  fold: 2
+  is_train: True
+  is_std: False
+  is_multi_channel: &is_multi_channel False
+  window_aug: True
+  window_policy: 2
+  use_smooth_label: True
+model:
+  model_name: 'senet'
+  classes: 6
+  is_pretrained: True
+  is_window: False
+  branch_head: False
+  is_multi_channel: *is_multi_channel
+  adj_model: False
+train:
+  seed: 7777
+  batch_size: 16
+  epoch: 3
+  learning_rate: 0.00001
+  accumulation_steps: 1
+  warm_start: False
+test:
+  batch_size: 32
+  is_validation: False
+  is_tta: True
+save:
+  save_path: ./intermediate_output/seresnext50_label_smoothing
+  description: 512x512 image, seresnext50, weighted_binary_cross_entropy, label smoothing

@@ -1,0 +1,12 @@
+epoch: 30
+batch_size: 2048
+learning_rate: 0.001
+model_names: [
+        "densenet_adj_prediction",
+        "se_resnext101_mixup",
+        "senet154_customlabels",
+        "model_base",
+        "2kyym_inception_resnet_v2",
+        "2kyym_inceptionv4",
+        "2kyym_xception",
+    ]
