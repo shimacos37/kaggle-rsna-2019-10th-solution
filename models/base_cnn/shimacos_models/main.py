@@ -81,7 +81,7 @@ class Model(pl.LightningModule):
             scheduler_name="warmup_scheduler",
             optimizer=self.optimizer,
             multiplier=10,
-            total_epoch=int(self.num_train_optimization_steps * 0.1),
+            total_epoch=int(self.num_train_optimization_steps * 0.01),
             after_scheduler=scheduler_cosine,
         )
         self.loss = get_loss(loss_name=self.base_config.loss_name)
